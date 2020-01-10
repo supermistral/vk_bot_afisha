@@ -7,7 +7,7 @@ from function import Afisha
 def msg(user_id, Message):
     vk.messages.send(user_id = event.user_id, random_id = get_random_id(), message = Message)    
     
-vk_sess = vk_api.VkApi(token = "3065c03cd80efe01b7caf2d5c650ccf219e73c8a54728cb9af85091c27fda9a2d8b599f2ea72ad35d475c")
+vk_sess = vk_api.VkApi(token = "")
 vk = vk_sess.get_api()
 longpoll = VkLongPoll(vk_sess)
 
